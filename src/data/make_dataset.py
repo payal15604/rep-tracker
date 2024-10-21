@@ -170,3 +170,5 @@ data_resampled = pd.concat([df.resample(rule="200ms").apply(sampling).dropna() f
 # --------------------------------------------------------------
 # Export dataset
 # --------------------------------------------------------------
+
+data_resampled.to_pickle("../../data/interim/01_data_processed.pkl")
